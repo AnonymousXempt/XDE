@@ -13,6 +13,7 @@ Xempt Data Exfiltrator (XDE) is designed get all of the vicitms valuable data in
 # **Contents**
  1. [Setup](https://github.com/AnonymousXempt/XDE#Setup)
  2. [How It Works](https://github.com/AnonymousXempt/XDE#How-It-Works)
+ 3. [Video](https://github.com/AnonymousXempt/XDE#Video)
 
 # **Setup**
 -------------------
@@ -39,6 +40,10 @@ Xempt Data Exfiltrator (XDE) is designed get all of the vicitms valuable data in
 - The Script Then Configures The Email Client
 - Then The Script Clears Its Tracks And Self Destructs   
 
+# **Video**
+-------------------
+
+https://user-images.githubusercontent.com/link.mp4
 
 
 ![3843c904-0833-4c32-8f1a-058979bd6277](https://user-images.githubusercontent.com/82794434/119254694-f31c5000-bbf6-11eb-9982-e5115d2b0052.jpeg)
