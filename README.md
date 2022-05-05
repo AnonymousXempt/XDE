@@ -7,7 +7,7 @@ Xempt Data Exfiltrator (XDE) is designed get all of the vicitms valuable data in
 
 ## **The XDE Repository contains the following file:**
  
-- Payload.txt
+- payload.txt
 - mail.ps1
 
 # **Contents**
