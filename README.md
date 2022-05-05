@@ -25,8 +25,19 @@ Xempt Data Exfiltrator (XDE) is designed get all of the vicitms valuable data in
 
 
 # **How It Works**
-- Once The Ducky HID Is Inserted It Acts As A Keyboard And Types At Superhuman Speed
-- 
+-------------------
+## Payload Behaviour
+- Once The Ducky HID Is Inserted It Executes The Payload At Superhuman Speed
+- It Disables Windows Defender And Launches Powershell As Administrator
+- Then It Creates A Folder With An Exclusion And Downloads The Script
+- It Then Runs The Script In A Non-Interactive Hidden Window
+
+## Script Behaviour
+- The Script Gets All Wifi Passwords As Plain Text And XML Format
+- Aswell As All Browser Data Including Passwords, Cookies, History, Credit Cards And More
+- It Then Compressed Them Ready For Emailing
+- The Script Then Configures The Email Client
+- Then The Script Clears Its Tracks And Self Destructs   
 
 
 
